@@ -1,0 +1,8 @@
+font=JetBrains Mono
+background-color=#1a2422FF
+text-color=#12e0b0FF
+border-color=#12e0b0FF
+border-radius=3
+text-alignment=center
+default-timeout=65000
+on-notify=exec mpv /usr/share/sounds/freedesktop/stereo/message.oga

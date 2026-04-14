@@ -1,0 +1,14 @@
+[Unit]
+Description=Refocus Reminder
+After=graphical-session.target
+Wants=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/home/saveon/.config/mako/scripts/refocusReminder.sh
+ExecStartPre=/bin/sleep 15
+Restart=always
+RestartSec=5s
+
+[Install]
+WantedBy=default.target
