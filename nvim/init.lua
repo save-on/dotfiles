@@ -139,5 +139,5 @@ vim.opt.autowrite = false
 -- !exist createUndoDirectory
 local undodir = vim.fn.expand("~/.vim/undodir")
 if vim.fn.isdirectory(undodir) == 0 then
-    vim.fn.mkdir(undo, "p")
+    vim.fn.mkdir(undodir, "p")
 end

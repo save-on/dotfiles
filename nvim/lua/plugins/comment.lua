@@ -1,8 +1,9 @@
 return {
     {
-        'numToStr/Comment.nvim',
-        opts = {
-            -- add any options here
+        'nvim-mini/mini.nvim',
+        version = '*',
+        options = {
+            ignore_blank_line = true,
         }
     }
 }
