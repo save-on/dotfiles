@@ -31,9 +31,10 @@ vim.keymap.set("n", "N", "Nzzzv", { desc = "Previous search result (centered)" }
 vim.keymap.set("n", "<C-d>", "<C-d>zz", { desc = "Half page down (centered)" })
 vim.keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Half page up (centered)" })
 
--- bufferNavigation map
+-- buffer map
 vim.keymap.set("n", "<leader>bn", ":bnext<CR>", { desc = "Next buffer" })
 vim.keymap.set("n", "<leader>bp", ":bprevious<CR>", { desc = "Previous buffer" })
+vim.keymap.set("n", "<leader>bd", ":bdelete<CR>", { desc = "Delet Current buffer" })
 
 -- splitting/resizing map
 vim.keymap.set("n", "<leader>sv", ":vsplit<CR>", { desc = "Split window Vertically" })
