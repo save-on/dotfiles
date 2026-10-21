@@ -57,7 +57,12 @@ return {
             })
             enable_lsp("clangd",
                 {
-                    cmd = { "clangd", "--query-driver=/usr/bin/g++,/usr/bin/gcc" },
+                    cmd = {
+                        "clangd",
+                        "--log=verbose",
+                        "--query-driver=/usr/bin/c++,/usr/bin/g++,/usr/bin/gcc",
+                        -- "--compile-commands-dir=build/bin",
+                    },
                     filetypes = { "c", "cpp", "objcpp" },
                     root_markers = {
                         ".clangd",
